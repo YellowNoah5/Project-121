@@ -1,0 +1,97 @@
+.heading
+{
+    font-size: 20;
+    color:red;
+    letter-spacing: 2px;
+}
+
+.GoogleL
+{
+    font-size: 16;
+}
+
+#VS
+{
+    font-size: 20px;
+    color: red
+}
+
+.mobnet
+{
+    letter-spacing: 1.8px;
+    font-size: 20
+}
+
+.heading1
+{
+    float:none;
+    background: gray;
+    border-radius: 20px;
+    box-shadow:7px 7px 7px rgb(102, 100, 98);
+    color: whitesmoke;
+}
+
+img
+{
+    border-radius: 20px;
+}
+
+.output
+{
+    font-size: 14px;
+}
+
+#imgname
+{
+    font-size: 20px;
+    color: yellow
+}
+
+#RD
+{
+    font-size: 17px
+}
+
+.test_image_and_result
+{
+    float:none;
+    background: gray;
+    border-radius: 10px;
+    box-shadow:7px 7px 7px rgb(102, 100, 98);
+    color: whitesmoke;
+}
+
+#My_Footer {
+    font-size: 24;
+    background-color: rgb(206, 255, 205);
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    line-height: 3;
+    text-align: center;
+    letter-spacing: 2;
+    color: rgb(47, 196, 122);
+    text-shadow: 5px 8px 10px rgb(38, 86, 9);
+}
+
+
+b {
+    font-size: 20;
+}
+
+li
+{
+    font-size: 20;
+    color: rgb(231, 175, 32);
+}
+
+h4 {
+    font-size: 30;
+}
+
+#conclusion {
+    font-size: 30;
+}
+span {
+    font-size: 20;
+}

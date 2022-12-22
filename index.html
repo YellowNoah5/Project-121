@@ -1,0 +1,351 @@
+<html>
+<head>
+<title>Real Time Image Identification App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+<center>
+  <h3 class="heading">CASE STUDY BETWEEN GOOGLE LENS AND MOBILENET</h3>
+</center>
+  <br>
+</head>
+<body>
+  <center>
+    <img src="google_lens.png" width="200">
+    <br>
+    <br>
+    <span id="VS">VS</span>
+    <br>
+    <br>
+    <p class="mobnet btn btn-primary">MOBILENET</p>
+
+    <hr>
+
+    <ol>
+      <div class="test_image_and_result col-xs-3">
+        <br>
+        <li class="col-sm=4 col-xs-12">
+            <b>TV Remote - </b>
+            <img src="Remote.jpg" class="img-responsive" width="600px">
+        </li>
+
+        <h5 class="col-sm=4 col-xs-12" >
+          <span>Output on</span> <b>GOOGLE LENS</b> -
+            <span>Remote Control </span>
+        </h5>
+
+        <h5 class="col-sm=4 col-xs-12" >
+          <span>Output on</span> <b>Mobilenet Model</b> -
+              <span>Remote Control </span>
+        </h5>
+
+
+        <div class="mini_result" class="coll-xs-12">
+          <h4>Result - </h4>
+          <hr>
+          <h4>Draw </h4>
+        </div>
+
+      </div>
+      <br>
+    
+
+    <hr>
+
+    
+      <div class="test_image_and_result col-xs-3">
+        <br>
+
+        <li class="col-sm=4 col-xs-12">
+            <b>Exploding Kittens - </b>
+            <img src="game.jpg" class="img-responsive" width="500px">
+        </li>
+
+        <h5 class="col-sm=4 col-xs-12" >
+          <span>Output on</span> <b>GOOGLE LENS</b> -
+            <span>exploding kittens </span>
+        </h5>
+
+        <h5 class="col-sm=4 col-xs-12" >
+          <span>Output on</span> <b>Mobilenet Model</b> -
+              <span>scoreboard </span>
+        </h5>
+
+
+        <div class="mini_result" class="coll-xs-12">
+          <h4>Result - </h4>
+          <hr>
+          <h4>Google Lens </h4>
+        </div>
+
+      </div>
+      <br>
+    
+
+    <hr>
+
+    
+      <div class="test_image_and_result col-xs-3">
+        <br>
+
+        <li class="col-sm=4 col-xs-12">
+            <b>Glue Stick - </b>
+            <img src="Glue_Stick.jpg" class="img-responsive" width="500px">
+        </li>
+
+        <h5 class="col-sm=4 col-xs-12" >
+          <span>Output on</span> <b>GOOGLE LENS</b> -
+            <span>Glue Stick </span>
+        </h5>
+
+        <h5 class="col-sm=4 col-xs-12" >
+          <span>Output on</span> <b>Mobilenet Model</b> -
+              <span>Hair Spray </span>
+        </h5>
+
+
+        <div class="mini_result" class="coll-xs-12">
+          <h4>Result - </h4>
+          <hr>
+          <h4>Google Lens </h4>
+        </div>
+
+      </div>
+      <br>
+    
+
+    <hr>
+
+    
+      <div class="test_image_and_result col-xs-3">
+        <br>
+
+        <li class="col-sm=4 col-xs-12">
+            <b>Lego Skeleton - </b>
+            <img src="skeleton.jpg" class="img-responsive" width="500px">
+        </li>
+
+        <h5 class="col-sm=4 col-xs-12" >
+          <span>Output on</span> <b>GOOGLE LENS</b> -
+            <span>Lego Skeleton </span>
+        </h5>
+
+        <h5 class="col-sm=4 col-xs-12" >
+          <span>Output on</span> <b>Mobilenet Model</b> -
+              <span>Lighter </span>
+        </h5>
+
+
+        <div class="mini_result" class="coll-xs-12">
+          <h4>Result - </h4>
+          <hr>
+          <h4>Google Lens </h4>
+        </div>
+
+      </div>
+      <br>
+    
+
+    <hr>
+
+
+    
+      <div class="test_image_and_result col-xs-3">
+        <br>
+
+        <li class="col-sm=4 col-xs-12">
+            <b>Glue - </b>
+            <img src="Glue.jpg" class="img-responsive" width="500px">
+        </li>
+
+        <h5 class="col-sm=4 col-xs-12" >
+          <span>Output on</span> <b>GOOGLE LENS</b> -
+            <span>Glue </span>
+        </h5>
+
+        <h5 class="col-sm=4 col-xs-12" >
+          <span>Output on</span> <b>Mobilenet Model</b> -
+              <span>Sunblock </span>
+        </h5>
+
+
+        <div class="mini_result" class="coll-xs-12">
+          <h4>Result - </h4>
+          <hr>
+          <h4>Google Lens </h4>
+        </div>
+
+      </div>
+      <br>
+    
+
+    <hr>
+
+    <div class="test_image_and_result col-xs-3">
+      <br>
+
+      <li class="col-sm=4 col-xs-12">
+          <b>Tape Measure - </b>
+          <img src="Tape_Measure.jpg" class="img-responsive" width="500px">
+      </li>
+
+      <h5 class="col-sm=4 col-xs-12" >
+        <span>Output on</span> <b>GOOGLE LENS</b> -
+          <span>Tape Measure </span>
+      </h5>
+
+      <h5 class="col-sm=4 col-xs-12" >
+        <span>Output on</span> <b>Mobilenet Model</b> -
+            <span>Power Drill </span>
+      </h5>
+
+
+      <div class="mini_result" class="coll-xs-12">
+        <h4>Result - </h4>
+        <hr>
+        <h4>Google Lens </h4>
+      </div>
+
+    </div>
+    <br>
+  
+
+  <hr>
+
+  <div class="test_image_and_result col-xs-3">
+    <br>
+
+    <li class="col-sm=4 col-xs-12">
+        <b>Photo Paper - </b>
+        <img src="photo_paper.jpg" class="img-responsive" width="500px">
+    </li>
+
+    <h5 class="col-sm=4 col-xs-12" >
+      <span>Output on</span> <b>GOOGLE LENS</b> -
+        <span>Photo Paper </span>
+    </h5>
+
+    <h5 class="col-sm=4 col-xs-12" >
+      <span>Output on</span> <b>Mobilenet Model</b> -
+          <span>Computer Mouse </span>
+    </h5>
+
+
+    <div class="mini_result" class="coll-xs-12">
+      <h4>Result - </h4>
+      <hr>
+      <h4>Google Lens </h4>
+    </div>
+
+  </div>
+  <br>
+
+
+<hr>
+
+
+<div class="test_image_and_result col-xs-3">
+  <br>
+
+  <li class="col-sm=4 col-xs-12">
+      <b>Nail File - </b>
+      <img src="Nail_file.jpg" class="img-responsive" width="600px">
+  </li>
+
+  <h5 class="col-sm=4 col-xs-12" >
+    <span>Output on</span> <b>GOOGLE LENS</b> -
+      <span>handful of olives dish </span>
+  </h5>
+
+  <h5 class="col-sm=4 col-xs-12" >
+    <span>Output on</span> <b>Mobilenet Model</b> -
+        <span>modem </span>
+  </h5>
+
+
+  <div class="mini_result" class="coll-xs-12">
+    <h4>Result - </h4>
+    <hr>
+    <h4>Draw </h4>
+  </div>
+
+</div>
+<br>
+
+
+<hr>
+
+<div class="test_image_and_result col-xs-3">
+  <br>
+
+  <li class="col-sm=4 col-xs-12">
+      <b>Origami Paper - </b>
+      <img src="Origami_Paper.jpg" class="img-responsive" width="500px">
+  </li>
+
+  <h5 class="col-sm=4 col-xs-12" >
+  Output on <b>GOOGLE LENS</b> -
+      <span>Origami Paper </span>
+  </h5>
+
+  <h5 class="col-sm=4 col-xs-12" >
+    Output on <b>Mobilenet Model</b> -
+        <span>Desktop Computer </span>
+  </h5>
+
+
+  <div class="mini_result" class="coll-xs-12">
+    <h4>Result - </h4>
+    <hr>
+    <h4>Google Lense </h4>
+  </div>
+
+</div>
+<br>
+
+
+<div class="test_image_and_result col-xs-3">
+  <br>
+
+  <li class="col-sm=4 col-xs-12">
+      <b>Fidget pen  - </b>
+      <img src="Fidget_pen.jpg" class="img-responsive" width="500px">
+  </li>
+
+  <h5 class="col-sm=4 col-xs-12" >
+  Output on <b>GOOGLE LENS</b> -
+      <span>Pen case </span>
+  </h5>
+
+  <h5 class="col-sm=4 col-xs-12" >
+    Output on <b>Mobilenet Model</b> -
+        <span>Digital Clock </span>
+  </h5>
+
+
+  <div class="mini_result" class="coll-xs-12">
+    <h4>Result - </h4>
+    <hr>
+    <h4>Draw </h4>
+  </div>
+
+</div>
+
+    </ol>
+    <br><br>
+    <p id="conclusion">I have used ten images and Google Lens has predicted eight of them accurately and mobilenet has predicted one of them accurately. So according to my case study Google Lens is more accurate. </p>
+    <hr>
+    <br><br>
+    <div class="copy_right_footer" id="My_Footer">
+      Created By - Noah Sandoval
+  </div>
+
+  
+</body>
+  </html>
